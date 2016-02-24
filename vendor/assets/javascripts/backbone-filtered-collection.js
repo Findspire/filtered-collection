@@ -92,15 +92,15 @@ THE SOFTWARE.
     }
 
     ,add: function() {
-      throw "Do not invoke directly";
+      this.collection.add.apply(this.collection, arguments);
     }
 
     ,remove: function() {
-      throw "Do not invoke directly";
+      this.collection.remove.apply(this.collection, arguments);
     }
 
     ,reset: function() {
-      throw "Do not invoke directly";
+      this.collection.reset.apply(this.collection, arguments);
     }
 
     ,_modelChanged: function(model, collection, options){
